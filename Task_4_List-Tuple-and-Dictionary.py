@@ -12,7 +12,7 @@ def is_prime(n: int) -> bool:
     if n < 2:
         return False
     for i in range(2, int(n ** 0.5)+1):
-        if n % i:
+        if n % i==0:
             return False
     return True
 
@@ -20,10 +20,13 @@ def find_primes(numbers: list) -> tuple:
     prime_numbers = tuple(num for num in numbers if is_prime(num))
     return prime_numbers  # Returning as a tuple
 
+# 4. Sum of First and Last Digit of an Integer
+def sum_first_and_last_digit(n: int) -> int:
+    digit = [int(d) for d in str(n)]
+    return digit[0] + digit[-1] #Sun of first and last digit from a given number
 
 
-
-sample_list = [10, 501, 22, 37, 100, 999, 87, 351]
+sample_list = [10, 501, 37, 22, 100, 999, 87, 351]
 
 print(f"Given list of numbers: {sample_list}")
 #Q 1: output
@@ -35,3 +38,8 @@ print(f"Even Number: {even},\nOdd Numbers: {odd}")
 primes = find_primes(sample_list)
 print("\nQ2: Find prime number in a list: ")
 print(f"Prime Numbers: {primes}")
+
+#Q 4: output
+num = 12345
+print("\nQ4: Find Sum of First and Last Digit of an Integer: ")
+print(f"Sun of first and last digit of {num} : {sum_first_and_last_digit(num)}")
