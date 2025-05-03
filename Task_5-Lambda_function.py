@@ -64,7 +64,6 @@ if __name__ == "__main__":
     print(f"\nQ2: To calculate the product of all numbers from the given list: {my_numbers_list}")
     print(list_of_product(my_numbers_list))
 
-
     # Q 3: output
     numbers = [1, 2, 3, 4, 5, 6, 7]
     print(f"\nQ3: To get the square of even number from the given list: {numbers}")
