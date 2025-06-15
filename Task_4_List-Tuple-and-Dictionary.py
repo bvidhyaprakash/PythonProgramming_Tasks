@@ -124,7 +124,7 @@ sample_list = [10, 501, 37, 22, 100, 999, 87, 351]
 print(f"Given list of numbers: {sample_list}")
 #Q 1: output
 even,odd = separate_even_odd(sample_list)
-print("\nQ1: Separate even & Odd numbers in a list: ")
+print(" Separate even & Odd numbers in a list: ")
 print(f"Even Number: {even},\nOdd Numbers: {odd}")
 
 #Q 2: output
