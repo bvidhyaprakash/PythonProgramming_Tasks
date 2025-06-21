@@ -14,7 +14,7 @@ class BankAccount:
         else:
             print("Insufficient balance in you account")
 
-    def grt_balance(self):
+    def get_balance(self):
         return self._balance
 
 class SavingAccount(BankAccount):
@@ -43,12 +43,12 @@ print("\n Saving Account")
 s = SavingAccount("BV1211", 8000, 3000)
 s.deposit(4000)
 s.withdraw(5000)
-s.grt_balance()
+s.get_balance()
 s.calculate_interest()
 s.withdraw(8000)
 
 print("\n Current account")
 c = CurrentAccount ("BVn22", 6000, 3000)
 c.withdraw(4000)
-c.grt_balance()
+c.get_balance()
 c.withdraw(2500)
